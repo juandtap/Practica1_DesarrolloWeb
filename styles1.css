@@ -9,6 +9,10 @@ body {
   background-color: white;
 }
 
+.title{
+  text-align: center;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -29,6 +33,7 @@ nav a {
   text-align: center;
   text-decoration: none;
   color: #555;
+  font-size: 13px;
 }
 
 nav a[aria-current='page'] {
@@ -43,4 +48,33 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+
+/* Define la animación de rotación */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Aplica la animación a la imagen */
+img {
+  animation: spin 2s linear infinite;
+  width: 400px; /* Define el ancho de la imagen en 500 píxeles */
+  height: 200px;
+
+}
+#imagen_html{
+
+  width: 200px; /* Define el ancho de la imagen en 500 píxeles */
+  height: 200px;
+
+}
+.intro{
+  width: 1000px;
+  height: 1250px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 5px solid #ccc;
+  border-radius: 10px;
 }
