@@ -7,6 +7,7 @@ body {
   font-family: system-ui, sans-serif;
   color: black;
   background-color: white;
+
 }
 
 .title{
@@ -94,15 +95,19 @@ img {
   font-size: 1rem;
 }
 #logo{
+  float: left;
+  margin-right: 20px;
   animation: spin 0s linear infinite;
-  width: 100px;
-  height: 80px;
+  width: 140px;
+  height: 140px;
 
 }
 #logoCss{
+  float: left;
+    margin-right: 20px;
   animation: spin 0s linear infinite;
-  width: 200px;
-  height: 90px;
+  width: 130px;
+  height: 170px;
 
 }
 #estructura{
