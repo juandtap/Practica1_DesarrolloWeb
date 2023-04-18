@@ -81,11 +81,8 @@ img {
 
 @keyframes color-change {
   0% { color: black; }
-  25% { color:aqua; }
-  30% { color:purple; }
-  50% { color: blue; }
-  80% { color: red; }
-  100% { color: green; }
+  100% { color: blue; }
+
 
 }
 
@@ -135,4 +132,7 @@ img {
 .content{
   width: 1500px;
   height: 1000px;
+}
+#texto {
+  color: black;
 }

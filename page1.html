@@ -7,7 +7,24 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="styles1.css" />
   <script type="module" src="script.js"></script>
+
+
+
+  <script>
+		function cambiaColor() {
+			document.getElementById("texto").style.color = "blue";
+		}
+	</script>
+
+
+
+
 </head>
+
+
+
+
+
 
 <body>
 
@@ -78,29 +95,22 @@ alt="Imagen Rotando" />
  <img id="logoCss"
 src="https://1000marcas.net/wp-content/uploads/2020/11/JavaScript-logo.png"
 alt="Imagen Rotando" />
-<p>
+<p id="texto" onmouseover="cambiaColor()" >
   Para usar JavaScript junto con HTML hay dos formas.
   <br>
 La primera es incluir el código de java script dentro de la etiqueta script como se muestra en el siguiente ejemplo:
-
-</p>
-
+<br>
 <img src="/Users/paul-astudillo/Documents/GitHub/Practica1_DesarrolloWeb/1.png" alt="Descripción de la imagen" id="mi-imagen">
-
-
-
-
-
-
-<p>
-  
+<br>
 La segunda forma es tener el script en un archivo .js aparte y en html en la etiqueta 
 script especificar su dirección (src):
-  
+<br>
+<br>
+<img src="/Users/paul-astudillo/Documents/GitHub/Practica1_DesarrolloWeb/2.png" alt="Descripción de la imagen" id="mi-imagen">
 
 
 </p>
-<img src="/Users/paul-astudillo/Documents/GitHub/Practica1_DesarrolloWeb/2.png" alt="Descripción de la imagen" id="mi-imagen">
+
 
 
 
