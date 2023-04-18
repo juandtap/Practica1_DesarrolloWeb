@@ -78,3 +78,61 @@ img {
   border: 5px solid #ccc;
   border-radius: 10px;
 }
+
+@keyframes color-change {
+  0% { color: black; }
+  25% { color:aqua; }
+  30% { color:purple; }
+  50% { color: blue; }
+  80% { color: red; }
+  100% { color: green; }
+
+}
+
+/*Para Las estrucutras de HTML*/
+/* Aplicamos la animación al texto */
+#html {
+  animation: color-change 3s infinite;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#logo{
+  animation: spin 0s linear infinite;
+  width: 100px;
+  height: 80px;
+
+}
+#logoCss{
+  animation: spin 0s linear infinite;
+  width: 200px;
+  height: 90px;
+
+}
+#estructura{
+  display: block; /* Permite establecer el ancho y margen */
+  margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
+  animation: spin 0s linear infinite;
+  width: 600px;
+  height: 280px;
+
+
+}
+
+#mi-imagen {
+
+  display: block; /* Permite establecer el ancho y margen */
+  margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
+  animation: spin 0s linear infinite;
+  transition: transform 0.3s ease-in-out; /* La transición durará 0.3 segundos */
+}
+
+#mi-imagen:hover,
+#mi-imagen:focus {
+  animation: spin 0s linear infinite;
+  transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
+}
+
+.content{
+  width: 1500px;
+  height: 1000px;
+}
