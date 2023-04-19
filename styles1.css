@@ -135,13 +135,27 @@ img {
   transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.header title{
+  background-color: #fff;
+}
+
 .content{
-  margin-top: 200px;
+  margin-top: 150px;
   padding: 1rem;
   float: center;
   margin-left: 100px;
   margin-right: 100px;
   text-align: justify;
+  background-color: #fff;
+  z-index: 0;
   /* width: 1500px;
   height: 1000px; */
 }
@@ -149,13 +163,7 @@ img {
   color: black;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-}
+
 
 #js{
   width: 550px;
