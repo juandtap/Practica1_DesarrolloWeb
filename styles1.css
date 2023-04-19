@@ -73,9 +73,9 @@ img {
 
 }
 .intro{
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 10px;
-  border: 5px solid #ccc;
+  border: 5px solid darkgrey;
   border-radius: 10px;
 }
 
@@ -189,4 +189,42 @@ img {
   to {
     transform: translateX(50px);
   }
+}
+
+
+/* Centramos el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+/* Estilos para los campos de texto */
+input[type="text"], input[type="email"], input[type="tel"] {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Estilo para el botón */
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: darkgray;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para los mensajes de error */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
 }

@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="styles1.css" />
-  <script type="module" src="script.js"></script>
+  
 </head>
 
 <body>
@@ -34,15 +34,34 @@
   </header>
 
   <div class="content">
-    <h2>Estructura de una página web</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cumque animi aspernatur, rerum voluptatum
-      molestiae quod vitae libero culpa consectetur quos tenetur laudantium recusandae sunt repudiandae quia doloremque
-      nisi itaque?
-    </p>
+    <h2>Formulario de Contacto</h2>
+    <div class="intro">
+      <form onsubmit="return validar()">
+        <label>Nombres:</label>
+        <input type="text" id="nombres" required>
+        <span class="error" id="error-nombres"></span>
+        
+        <label>Apellido:</label>
+        <input type="text" id="apellido" required>
+        <span class="error" id="error-apellido"></span>
+        
+         <label>Teléfono:</label>
+        <input type="tel" id="telefono" pattern="[0-9]{8}" required>
+        <span class="error" id="error-telefono"></span>
+        
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="error-email"></span>
+        
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+    
+
+
   </div>
 
-
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
