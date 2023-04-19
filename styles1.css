@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  margin-top: 200px;
+  
   font-family: system-ui, sans-serif;
   color: black;
   background-color: white;
@@ -136,9 +136,14 @@ img {
 }
 
 .content{
-  /* margin-top: 200px; */
-  width: 1500px;
-  height: 1000px;
+  margin-top: 200px;
+  padding: 1rem;
+  float: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: justify;
+  /* width: 1500px;
+  height: 1000px; */
 }
 #texto {
   color: black;
