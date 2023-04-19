@@ -12,7 +12,7 @@ body {
 }
 
 .title{
-  text-align: center;
+  text-align: center;  
 }
 
 nav {
@@ -73,8 +73,7 @@ img {
 
 }
 .intro{
-
-  background-color:white;
+  background-color: #f2f2f2;
   padding: 10px;
   border: 5px solid #ccc;
   border-radius: 10px;
@@ -135,15 +134,12 @@ img {
 }
 
 .header {
+  background-color:darkgrey;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
-}
-
-.header title{
-  background-color: #fff;
 }
 
 .content{
