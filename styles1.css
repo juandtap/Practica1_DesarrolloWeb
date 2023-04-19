@@ -139,19 +139,6 @@ nav a[aria-current='page'] {
 }
 
 
-#estructura{
-  display: block; /* Permite establecer el ancho y margen */
-  margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
-  animation: spin 0s linear infinite;
-  width: 600px;
-  height: 280px;
-
-
-}
-
-
-
-
 .header {
   background-color:darkgrey;
   position: fixed;
@@ -227,11 +214,4 @@ input[type="submit"] {
   color: #000;
   border: none;
   cursor: pointer;
-}
-
-/* Estilos para los mensajes de error */
-.error {
-  color: red;
-  font-size: 12px;
-  margin-bottom: 10px;
 }
