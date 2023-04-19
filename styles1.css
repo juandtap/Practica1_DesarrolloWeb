@@ -4,17 +4,18 @@
 
 body {
   margin: 0;
-  
+  /* defnimos el tipo y color de la fuete */
   font-family: serif;
   color: black;
   background-color: white;
 
 }
-
+/* Centramos el titulo del encabezado */
 .title{
   text-align: center;  
 }
 
+/* estilo para la barra de navegacion */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -43,15 +44,6 @@ nav a[aria-current='page'] {
   background-color: #d4d4d4;
 }
 
-/* main {
-  padding: 1rem;
-} */
-
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
 
 /* Define la animación de rotación */
 @keyframes spin {
@@ -59,26 +51,33 @@ h1 {
   100% { transform: rotate(360deg); }
 }
 
-/* Aplica la animación a la imagen */
-img {
+
+/* Aplica la animación de rotacion a las imagenes de la pagina index.html*/
+.spin-image {
   animation: spin 2s linear infinite;
-  width: 400px; /* Define el ancho de la imagen en 500 píxeles */
+  width: 300px; /* Define el ancho de la imagen en 500 píxeles */
+  height: 200px;
+  display: block; /* Permite establecer el ancho y margen */
+  margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
+  
+}
+/*  aplicamos tamanio solo a la imagen html de la pagina index.html  */
+#image-html{
+
+  width: 200px; 
   height: 200px;
 
 }
-#imagen_html{
 
-  width: 200px; /* Define el ancho de la imagen en 500 píxeles */
-  height: 200px;
-
-}
-.intro{
+.content-border{
+  
   background-color: #fff;
   padding: 10px;
   border: 5px solid darkgrey;
   border-radius: 10px;
 }
 
+/*animacion cambio de color al texto*/
 @keyframes color-change {
   0% { color: black; }
   100% { color: blue; }
@@ -86,7 +85,7 @@ img {
 
 }
 
-/*Para Las estrucutras de HTML*/
+/*Para la pagina de estrucutras de HTML*/
 /* Aplicamos la animación al texto */
 #html {
   animation: color-change 3s infinite;
@@ -118,6 +117,8 @@ img {
 
 
 }
+
+
 
 #mi-imagen {
 
@@ -192,13 +193,15 @@ img {
 }
 
 
+
 /* Centramos el formulario */
 form {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
+  
 }
 
 /* Estilos para los campos de texto */
