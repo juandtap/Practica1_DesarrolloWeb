@@ -4,6 +4,19 @@ function cambiaColor() {
     document.getElementById("texto").style.color = "blue";
 }
 
+var telefonoInput = document.getElementById("telefono");
+
+telefonoInput.addEventListener("input", function () {
+    var telefonoValue = telefonoInput.value;
+    var ultimoCaracter = telefonoValue.charAt(telefonoValue.length - 1);
+
+    if (isNaN(ultimoCaracter)) {
+        telefonoInput.value = telefonoValue.slice(0, -1);
+    }
+});
+
+
+
 function validar() {
     // Obtenemos los valores de los campos
     var nombres = document.getElementById("nombres").value.trim();
