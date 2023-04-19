@@ -152,3 +152,33 @@ img {
   z-index: 999;
 }
 
+#js{
+  width: 550px;
+  height: 450px;
+  display: block; /* Permite establecer el ancho y margen */
+  margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
+  animation: spin 0s linear infinite;
+
+}
+
+#mi-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mi-lista li {
+  animation-name: mover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes mover {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
