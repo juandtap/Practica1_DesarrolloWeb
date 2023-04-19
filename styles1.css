@@ -85,29 +85,40 @@ nav a[aria-current='page'] {
 
 }
 
-/*Para la pagina de estrucutras de HTML*/
-/* Aplicamos la animación al texto */
-#html {
+/*Para la pagina de estrucutra de pagina web (page1.html)*/
+/* Aplicamos la animación solo al texto de HTML */
+#text-html {
   animation: color-change 3s infinite;
   font-weight: bold;
   font-size: 1rem;
 }
-#logo{
+
+/* para los logos de HTML, CSS y JS de la pagina page1.html*/
+.logo-web{
   float: left;
   margin-right: 20px;
-  animation: spin 0s linear infinite;
+  /* animation: spin 2s linear infinite; */
   width: 140px;
-  height: 140px;
+  height: 160px;
 
 }
-#logoCss{
-  float: left;
-    margin-right: 20px;
-  animation: spin 0s linear infinite;
-  width: 130px;
-  height: 170px;
 
+/* Estilo para que las imagenes se hagan mas grandes al pasar el mouse*/
+
+.zoom-image {
+
+  display: block; /* Permite establecer el ancho y margen */
+  margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
+  /* animation: spin 0s linear infinite; */
+  transition: transform 0.3s ease-in-out; /* La transición durará 0.3 segundos */
 }
+
+.zoom-image:hover,
+.zoom-image:focus {
+ 
+  transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
+}
+
 #estructura{
   display: block; /* Permite establecer el ancho y margen */
   margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
@@ -120,19 +131,6 @@ nav a[aria-current='page'] {
 
 
 
-#mi-imagen {
-
-  display: block; /* Permite establecer el ancho y margen */
-  margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
-  animation: spin 0s linear infinite;
-  transition: transform 0.3s ease-in-out; /* La transición durará 0.3 segundos */
-}
-
-#mi-imagen:hover,
-#mi-imagen:focus {
-  animation: spin 0s linear infinite;
-  transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
-}
 
 .header {
   background-color:darkgrey;
@@ -155,9 +153,7 @@ nav a[aria-current='page'] {
   /* width: 1500px;
   height: 1000px; */
 }
-#texto {
-  color: black;
-}
+
 
 
 
