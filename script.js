@@ -5,9 +5,9 @@ function cambiaColor() {
 }
 
 // hace que los links sean abiertos en una nueva tab del navegador
-var links = document.getElementsByTagName("a");
-  for (var i = 0; i < links.length; i++) {
-    links[i].setAttribute("target", "_blank");
+var footerLinks = document.querySelectorAll("footer a");
+  for (var i = 0; i < footerLinks.length; i++) {
+    footerLinks[i].setAttribute("target", "_blank");
   }
 
 var telefonoInput = document.getElementById("telefono");
