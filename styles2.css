@@ -8,8 +8,8 @@
     margin: 0;
     /* defnimos el tipo y color de la fuete */
     font-family: serif;
-    color: black;
-    background-color: white;
+    color: #fff;
+    background-color: #333;
   
   }
   /* Centramos el titulo del encabezado */

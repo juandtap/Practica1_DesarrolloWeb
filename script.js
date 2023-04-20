@@ -51,3 +51,15 @@ function validar() {
     alert('Datos enviados correctamente')
     return true;
 }
+
+function cambiarEstilo() {
+    var estiloActual = document.getElementById("estilo-pagina").getAttribute("href");
+    var nuevoEstilo = "";
+    if (estiloActual == "styles1.css") {
+      nuevoEstilo = "styles2.css";
+    } else {
+      nuevoEstilo = "styles1.css";
+    }
+    document.getElementById("estilo-pagina").setAttribute("href", nuevoEstilo);
+  }
+  
