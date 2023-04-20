@@ -11,8 +11,8 @@ var footerLinks = document.querySelectorAll("footer a");
   }
 
 var telefonoInput = document.getElementById("telefono");
-
-telefonoInput.addEventListener("input", function () {
+if (telefonoInput !== null) {
+  telefonoInput.addEventListener("input", function () {
     var telefonoValue = telefonoInput.value;
     var ultimoCaracter = telefonoValue.charAt(telefonoValue.length - 1);
 
@@ -20,6 +20,8 @@ telefonoInput.addEventListener("input", function () {
         telefonoInput.value = telefonoValue.slice(0, -1);
     }
 });
+}
+
 
 
 
