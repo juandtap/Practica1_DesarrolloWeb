@@ -215,3 +215,42 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
+
+/*estilo para el footer*/
+footer {
+  background-color: darkgray;
+  color: #000;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  bottom: 0;
+  width: 100%;
+}
+footer ul {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+footer ul li {
+  margin-right: 20px;
+  
+  
+}
+
+footer button {
+  /*flex-shrink = 0 es para que el boton no cambie el tamanio */
+  flex-shrink: 0;
+  background-color: #fff;
+  color: #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+  
+  cursor: pointer;
+}
+
+.external-links li a:visited {
+  text-decoration: none;
+  color: #000;
+}

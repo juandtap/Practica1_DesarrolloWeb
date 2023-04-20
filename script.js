@@ -4,6 +4,12 @@ function cambiaColor() {
     document.getElementById("texto").style.color = "blue";
 }
 
+// hace que los links sean abiertos en una nueva tab del navegador
+var links = document.getElementsByTagName("a");
+  for (var i = 0; i < links.length; i++) {
+    links[i].setAttribute("target", "_blank");
+  }
+
 var telefonoInput = document.getElementById("telefono");
 
 telefonoInput.addEventListener("input", function () {
