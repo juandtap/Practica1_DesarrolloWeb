@@ -48,5 +48,6 @@ function validar() {
         return false;
     }
     // Si todos los campos son válidos, enviamos el formulario
+    alert('Datos enviados correctamente')
     return true;
 }
