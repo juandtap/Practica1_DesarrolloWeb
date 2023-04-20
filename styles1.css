@@ -125,7 +125,7 @@ nav a[aria-current='page'] {
   transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
 }
 
-#big-image{
+.big-image{
   display: block; /* Permite establecer el ancho y margen */
   margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
   /* animation: spin 0s linear infinite; */
@@ -133,8 +133,8 @@ nav a[aria-current='page'] {
   height: 500px;
   width: 600px;
 }
-#big-image:hover,
-#big-image:focus {
+.big-image:hover,
+.big-image:focus {
  
   transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
 }
