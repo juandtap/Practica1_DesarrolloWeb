@@ -7,7 +7,7 @@
   body {
     margin: 0;
     /* defnimos el tipo y color de la fuete */
-    font-family: serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
     background-color: #333;
   
@@ -78,16 +78,16 @@
   
   .content-border{
     
-    background-color: #fff;
+    background-color: #333;
     padding: 10px;
-    border: 5px solid darkgrey;
+    border: 5px solid white;
     border-radius: 10px;
   }
   
   /*animacion cambio de color al texto*/
   @keyframes color-change {
-    0% { color: black; }
-    100% { color: blue; }
+    0% { color: white; }
+    100% { color: greenyellow; }
   
   
   }
@@ -126,7 +126,7 @@
     transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
   }
   
-  #big-image{
+  .big-image{
     display: block; /* Permite establecer el ancho y margen */
     margin: 0 auto; /* Establece los márgenes laterales en automático para centrar horizontalmente */
     /* animation: spin 0s linear infinite; */
@@ -134,15 +134,15 @@
     height: 500px;
     width: 600px;
   }
-  #big-image:hover,
-  #big-image:focus {
+  .big-image:hover,
+  .big-image:focus {
    
     transform: scale(1.2); /* La imagen se hace un 20% más grande al hacer clic */
   }
   
   
   .header {
-    background-color:darkgrey;
+    background-color:#333;
     position: fixed;
     top: 0;
     left: 0;
@@ -157,7 +157,7 @@
     margin-left: 100px;
     margin-right: 100px;
     text-align: justify;
-    background-color: #fff;
+    background-color: #333;
     z-index: 0;
     /* width: 1500px;
     height: 1000px; */
@@ -220,7 +220,7 @@
   
   /*estilo para el footer*/
   footer {
-    background-color: darkgray;
+    background-color: #eee;
     color: #000;
     display: flex;
     padding: 20px;
@@ -244,8 +244,9 @@
   footer button {
     /*flex-shrink = 0 es para que el boton no cambie el tamanio */
     flex-shrink: 0;
-    background-color: #fff;
-    color: #333;
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
     border-radius: 20px;
     padding: 10px 20px;
     
